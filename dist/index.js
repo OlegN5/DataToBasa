@@ -51,9 +51,11 @@ function datafromText() {
         Full = fact[5]
         Dur = new Date(duration).toISOString().substr(11, 8)
         addFrom = 'sTimeTextToBase'
-        
+        dataAdded = new Date()
+
         return {
             name: myName,
+            dataAdded,
             timeStart,
             timeStop,
             ID,
